@@ -6,10 +6,9 @@
 git clone https://github.com/alexBaizeau/exact-online-api-demo.git
 cd exact-online-api-demo
 virtualenv env
+. ./env/bin/activate
 pip install -r requirements.txt
 cp config.ini.sample config.ini
-. ./env/bin/activate
-
 ```
 
 
