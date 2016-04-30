@@ -8,6 +8,7 @@ cd exact-online-api-demo
 virtualenv env
 pip install -r requirements.txt
 cp config.ini.sample config.ini
+. ./env/bin/activate
 
 ```
 
