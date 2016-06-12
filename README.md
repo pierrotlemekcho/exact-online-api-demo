@@ -14,6 +14,7 @@ cp config.ini.sample config.ini
 
 ## First time user
 Make sure that you have an app here https://apps.exactonline.com/be/fr-BE/Manage if not create a test one
+voir la nationalité
 That's where the client id , secret and url are
 
 ```bash

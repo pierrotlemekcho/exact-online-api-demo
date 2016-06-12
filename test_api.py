@@ -3,7 +3,7 @@ from time import sleep
 import webbrowser
 from exactonline.api import ExactApi
 from exactonline.storage import IniStorage
-from urllib import unquote
+from urllib.parse import unquote
 
 class MyIniStorage(IniStorage):
     def get_response_url(self):
@@ -29,7 +29,7 @@ def setup(base_url, client_id, client_secret):
     print("A web browser is going to open in 5 seconds, authenticate and copy and paste the value of the code query parameter")
     sleep(5)
     webbrowser.open_new(api.create_auth_request_url())
-    code = unquote(raw_input('Enter value of the code query parameter: '))
+    code = unquote(input('Enter value of the code query parameter: '))
     api.request_token(code)
     print("High five!! it worked")
 
