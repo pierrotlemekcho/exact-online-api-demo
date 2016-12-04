@@ -30,3 +30,4 @@ Open `config.ini` to see the results
 ```bash
 python test_api.py demo
 ```
+##Merci ALEX
